@@ -1,0 +1,162 @@
+/* Defaults */
+body { font-family: 'Roboto'; font-size: 16px; line-height: 24px; }
+body { background-image: url(../img/bg-main.png); background-position: center; }
+body { background-size: cover; background-attachment: fixed; overflow-x: hidden; }
+
+h1, h2, h3 { font-family: 'Euromode Bold'; }
+h4, h5 { font-family: 'Euromode'; }
+h1 { font-size: 56px; line-height: 64px; margin-bottom: 40px; }
+h2 { font-size: 48px; line-height: 56px; margin-bottom: 30px; }
+h3 { font-size: 32px; line-height: 40px; margin-bottom: 20px; }
+h4 { font-size: 24px; line-height: 32px; margin-bottom: 20px; }
+h5 { font-size: 16px; line-height: 24px; margin-bottom: 0; }
+p  { font-size: 16px; line-height: 24px; margin-bottom: 20px; }
+li { font-size: 16px; line-height: 24px; }
+
+a { color: #ed1b2f; transition: all 0.3s; }
+a img { transition: all 0.3s; }
+a:hover { text-decoration: none; color: #404040; }
+
+hr {}
+table { width: 100%; }
+blockquote {}
+svg { height: 100%; width: 100%; }
+
+/* General */
+.hidden { display: none; z-index: -1000 !important;}
+.required { color: red; font-weight: bold; }
+
+.fold { padding-top: 100px; padding-bottom: 100px; overflow-x: hidden; }
+.fold { background-position: center; background-repeat: no-repeat; background-attachment: fixed; }
+
+/* Line Heights */
+.lh-1 { line-height: 1; }
+.lh-2 { line-height: 2; }
+.lh-3 { line-height: 3; }
+.lh-4 { line-height: 4; }
+.lh-5 { line-height: 5; }
+
+/* Font Colors */
+.fc-red 	{ color: #EC254C; }
+.fc-orange  { color: #F36523; }
+.fc-purple  { color: #B81F68; }
+.fc-violet  { color: #330066; }
+
+/* Header */
+header { position: fixed; width: 100%; left: 0; top: 0; z-index: 100; }
+header { transition: all 0.5s; background: rgba(0, 0, 0, 0);  }
+header > div { padding-top: 30px;  padding-bottom: 20px; transition: all 0.3s; }
+header .main-logo { float: left; }
+header .main-logo img { max-height: 60px; transition: all 0.3s; }
+
+header.append { background: rgba(0, 0, 0, 1); }
+header.append > div { padding-top: 20px; }
+header.append .main-logo img { max-height: 50px; }
+
+header .list-menu { text-align: right; margin-bottom: 0; padding-left: 0; }
+header .list-menu-item { display: inline-block; margin: 0 0 0 50px; }
+header .list-menu-item a { color: #FFF; padding: 8px 0; display: block; position: relative; }
+header .list-menu-item a:before { position: absolute; content: ""; transition: all 0.3s; }
+header .list-menu-item a:before { width: 0; height: 2px; bottom: 0; background-color: #F36523; }
+header .list-menu-item a:hover,
+header .list-menu-item a.active { color: #F36523; }
+header .list-menu-item a:hover:before { width: 100%; }
+header .list-menu-item .btn { padding: 8px 32px; }
+header .list-menu-item .btn:before { display: none; }
+header .list-menu-item .btn:hover { color: #FFF; }
+
+/* Fold: Main */
+.fold-main { padding-top: 0; padding-bottom: 0; color: #FFFFFF; overflow: hidden; }
+.fold-main .container { max-width: 1100px; }
+.fold-main .container .row { height: 100vh; display: flex; }
+.fold-main-img img { max-width: 480px; }
+
+/* Fold: Services */
+.fold-services {}
+.fold-services .step-icon { height: 140px; width: 140px; background-color: #B81F68; margin: 0 auto 30px; }
+.fold-services .step-icon { border-radius: 50%; box-shadow: 0 0 0 0 rgb(184, 31, 104, 0.5); }
+.fold-services .step-icon { transition: all 0.3s; display: flex; justify-content: center; }
+.fold-services .step-icon svg { fill: #FFFFFF; max-height: 60px; max-width: 60px; align-self: center; }
+.fold-services .step-icon:hover { background-color: #330066; box-shadow: 0 0 0 10px rgb(51, 0, 102, 0.5); }
+
+.fold-services span { font-family: 'Euromode Bold'; font-size: 104px; height: 160px; line-height: normal; }
+.fold-services span { display: block; float: left; width: 80px; text-align: right; margin-right: 20px; opacity: 10%; }
+
+/* Fold: Features */
+.fold-features { padding: 0; }
+.fold-features .btn-primary:hover { background-color: #000000; }
+
+/* Fold: Pricing */
+.fold-pricing { background-color: rgba(200, 200, 200, 0.2); }
+.fold-pricing .card { background-color: #FFFFFF; color: #000000; }
+.fold-pricing .card { border-radius: 20px; box-shadow: 0 0 40px 0 rgb(0, 0, 0, 0.2); border: 0; text-align: center; }
+.fold-pricing .card li { border-top: 1px solid rgb(0, 0, 0, 0.1); padding: 7px; }
+.fold-pricing .card-header { padding: 50px 0; background-color: transparent; border: 0; }
+.fold-pricing .card-header:first-child { border-radius: 20px 20px 0 0; }
+.fold-pricing .card-footer { padding: 20px 0; background-color: transparent; border: 0; }
+
+.fold-pricing .card.plus { background-color: #B81F68; color: #FFFFFF; }
+.fold-pricing .card.plus li { border-top-color: rgb(255, 255, 255, 0.1); }
+.fold-pricing .card.plus li.header { background-color: #330066; }
+.fold-pricing .card.plus .btn-quartenary:hover { background: #000000; }
+
+.fold-pricing .card.premium { background-color: #330066; color: #FFFFFF; }
+.fold-pricing .card.premium li { border-top-color: rgb(255, 255, 255, 0.1); }
+.fold-pricing .card.premium li.header { background-color: #B81F68; }
+.fold-pricing .card.premium .btn-tertiary:hover { background: #000000; }
+
+/* Layouts */
+.layout-1 { position: relative; background-attachment: fixed; padding: 0; }
+.layout-1 { background-color: #330066; color: #FFF; }
+.layout-1 .billboard { position: absolute; height: 100%; width: 50%; background-position: center; }
+.layout-1 .billboard { background-repeat: no-repeat; background-size: cover; }
+.layout-1 .context div { padding-top: 100px; padding-bottom: 100px; padding-left: 70px; }
+.layout-1 .row { justify-content: flex-end; }
+
+/* Fold: Clients */
+.kneeler { padding-top: 80px; padding-bottom: 40px; }
+.kneeler { background-position: center 300px; background-repeat: no-repeat; position: relative; }
+.kneeler { background-color: #FFFFFF; background-image: url(../images/bg-kneeler.png); }
+.kneeler .card { border-radius: 20px; border: 0; padding: 30px; box-shadow: 0 0 40px 0 rgb(0, 0, 0, 0.2); }
+.kneeler .clients-logo img { mix-blend-mode: lighten; }
+
+/* Fold: Testimonials */
+.fold-testimonials { position: relative; overflow: hidden; }
+.fold-testimonials:before,
+.fold-testimonials:after { position: absolute; height: 300px; width: 300px; opacity: 0.1; }
+.fold-testimonials:before,
+.fold-testimonials:after { background-image: url(../images/icon-quote.png); background-size: cover; }
+.fold-testimonials:before { content: ""; left: 10%; top: 50%; transform: translate(0, -50%); }
+.fold-testimonials:after { content: ""; right: 10%; top: 50%; transform: translate(0, -50%); }
+.fold-testimonials:after { transform: rotate(-180deg); }
+
+.fold-testimonials .slide-img div { padding: 10px; max-height: 160px; max-width: 160px; }
+.fold-testimonials .slide-img img { padding: 10px; box-shadow: 0 0 0 10px rgb(184, 31, 104, 0.5); }
+.fold-testimonials .slide-img img { background-color: #B81F68; border-radius: 50%; }
+
+/* Footer */
+footer { padding-top: 50px; padding-bottom: 50px; background-color: #330066; color: #FFFFFF }
+footer a { color: #FFFFFF; font-size: 24px; width: 32px; height: 32px; transition: all 0.3s; }
+footer a { display: flex; justify-content: center; align-items: center; position: absolute; top: 0; left: 0; }
+footer a:hover { color: #FFFFFF; margin-top: -10px; }
+footer li { padding: 20px; position: relative; }
+
+/* Loader */
+.no-js #loader { display: none;  }
+   .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; }
+.se-pre-con { display: flex; justify-content: center; align-items: center; background-color: #330066; }
+.se-pre-con img { height: 100px; width: 100px; }
+
+/* Floaters */
+.floaters { position: fixed; right: -70px; bottom: 20px; z-index: 100; transition: all 0.3s; }
+.floaters .btn { border: 0; background: #B81F68 !important; color: #FFF !important; border-radius: 50%; }
+.floaters .btn { width: 50px; height: 50px; display: flex; padding: 0; text-align: center; opacity: 0.5; }
+.floaters .btn { box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2); align-items: center; justify-content: center; }
+.floaters .btn:hover { opacity: 1; }
+.floaters > div { margin-top: 10px; }
+.floaters.show { right: 20px; }
+
+.list-check li { position: relative; padding-left: 30px; }
+.list-check li:before { content: "\f00c"; font-family: 'Font Awesome 5 Free'; font-weight: 900; position: absolute; left: 0; }

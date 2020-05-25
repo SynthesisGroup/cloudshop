@@ -1,0 +1,36 @@
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url("../fonts/Roboto/Roboto-Italic.ttf"); }
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../fonts/Roboto/Roboto-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Roboto Bold Italic';
+  src: url("../fonts/Roboto/Roboto-BoldItalic.ttf"); }
+
+/* Euromode */
+@font-face {
+  font-family: 'Euromode';
+  src: url("../fonts/Euromode/Euromode.ttf"); }
+
+@font-face {
+  font-family: 'Euromode Bold';
+  src: url("../fonts/Euromode/Euromode-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+	   url("../fonts/fa-solid-900.woff2") format("woff2"),
+	   url("../fonts/fa-solid-900.woff") format("woff"),
+	   url("../fonts/fa-solid-900.ttf") format("truetype"),
+	   url("../fonts/fa-solid-900.svg#fontawesome") format("svg"); }
