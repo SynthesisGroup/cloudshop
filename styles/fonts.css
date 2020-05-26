@@ -15,6 +15,23 @@
   font-family: 'Roboto Bold Italic';
   src: url("../fonts/Roboto/Roboto-BoldItalic.ttf"); }
 
+/* Proxima Nova */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/Proxima-Nova/Proxima-Nova-Regular.otf"); }
+
+@font-face {
+  font-family: 'Proxima Nova Thin';
+  src: url("../fonts/Proxima-Nova/Proxima-Nova-Thin.otf"); }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/Proxima-Nova/Proxima-Nova-Bold.otf"); }
+
+@font-face {
+  font-family: 'Proxima Nova Extra Bold';
+  src: url("../fonts/Proxima-Nova/Proxima-Nova-Extra-Bold.otf"); }
+
 /* Euromode */
 @font-face {
   font-family: 'Euromode';

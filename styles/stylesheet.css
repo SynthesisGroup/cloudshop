@@ -1,12 +1,10 @@
 /* Defaults */
-body { font-family: 'Roboto'; font-size: 16px; line-height: 24px; }
-body { background-image: url(../img/bg-main.png); background-position: center; }
-body { background-size: cover; background-attachment: fixed; overflow-x: hidden; }
+body { font-family: 'Proxima Nova'; font-size: 16px; line-height: 24px; }
 
-h1, h2, h3 { font-family: 'Euromode Bold'; }
-h4, h5 { font-family: 'Euromode'; }
-h1 { font-size: 56px; line-height: 64px; margin-bottom: 40px; }
-h2 { font-size: 48px; line-height: 56px; margin-bottom: 30px; }
+h1, h2, h3 { font-family: 'Proxima Nova Bold'; }
+h4, h5 { font-family: 'Proxima Nova'; }
+h1 { font-size: 48px; line-height: 56px; margin-bottom: 40px; }
+h2 { font-size: 40px; line-height: 48px; margin-bottom: 30px; }
 h3 { font-size: 32px; line-height: 40px; margin-bottom: 20px; }
 h4 { font-size: 24px; line-height: 32px; margin-bottom: 20px; }
 h5 { font-size: 16px; line-height: 24px; margin-bottom: 0; }
@@ -21,12 +19,13 @@ hr {}
 table { width: 100%; }
 blockquote {}
 svg { height: 100%; width: 100%; }
+strong { font-family: 'Proxima Nova Bold'; }
 
 /* General */
-.hidden { display: none; z-index: -1000 !important;}
+.hidden { display: none; z-index: -1000 !important; }
 .required { color: red; font-weight: bold; }
 
-.fold { padding-top: 100px; padding-bottom: 100px; overflow-x: hidden; }
+.fold { padding-top: 100px; padding-bottom: 100px; overflow-x: hidden0; min-height: 100vh; }
 .fold { background-position: center; background-repeat: no-repeat; background-attachment: fixed; }
 
 /* Line Heights */
@@ -54,14 +53,14 @@ header.append > div { padding-top: 20px; }
 header.append .main-logo img { max-height: 50px; }
 
 header .list-menu { text-align: right; margin-bottom: 0; padding-left: 0; }
-header .list-menu-item { display: inline-block; margin: 0 0 0 50px; }
+header .list-menu-item { display: inline-block; margin: 0 0 0 50px; font-size: 14px; }
 header .list-menu-item a { color: #FFF; padding: 8px 0; display: block; position: relative; }
 header .list-menu-item a:before { position: absolute; content: ""; transition: all 0.3s; }
 header .list-menu-item a:before { width: 0; height: 2px; bottom: 0; background-color: #F36523; }
 header .list-menu-item a:hover,
 header .list-menu-item a.active { color: #F36523; }
 header .list-menu-item a:hover:before { width: 100%; }
-header .list-menu-item .btn { padding: 8px 32px; }
+header .list-menu-item .btn { padding: 8px 32px; font-size: 14px; }
 header .list-menu-item .btn:before { display: none; }
 header .list-menu-item .btn:hover { color: #FFF; }
 
@@ -85,6 +84,25 @@ header .list-menu-item .btn:hover { color: #FFF; }
 /* Fold: Features */
 .fold-features { padding: 0; }
 .fold-features .btn-primary:hover { background-color: #000000; }
+
+/* Fold: Benefits */
+.fold-benefits { background-image: url(../images/bg-benefits.jpg); background-size: contain; }
+.fold-benefits { background-color: #fdb511; background-position: center 100px; color: #FFFFFF; }
+.fold-benefits .card { border: 0; border-radius: 0; margin-bottom: 20px; position: relative; }
+.fold-benefits .card-body { color: #000000; display: flex; align-items: center; }
+
+.fold-benefits .card i { font-size: 20px; }
+.fold-benefits .card span { height: 70px; width: 70px; position: absolute; top: 50%; display: flex; }
+.fold-benefits .card span { background-color: #330066; align-items: center; justify-content: center; }
+.fold-benefits .card span { color: #FFFFFF; transform: translate(0, -50%); border-radius: 50px; }
+
+.fold-benefits .column-left .card { padding-right: 35px; }
+.fold-benefits .column-left .card-body { justify-content: flex-end; text-align: right; }
+.fold-benefits .column-left .card span { right: -40px; }
+
+.fold-benefits .column-right .card { padding-left: 35px; }
+.fold-benefits .column-right .card-body { justify-content: flex-start; text-align: left; }
+.fold-benefits .column-right .card span { left: -40px; }
 
 /* Fold: Pricing */
 .fold-pricing { background-color: rgba(200, 200, 200, 0.2); }
@@ -117,11 +135,11 @@ header .list-menu-item .btn:hover { color: #FFF; }
 .kneeler { padding-top: 80px; padding-bottom: 40px; }
 .kneeler { background-position: center 300px; background-repeat: no-repeat; position: relative; }
 .kneeler { background-color: #FFFFFF; background-image: url(../images/bg-kneeler.png); }
-.kneeler .card { border-radius: 20px; border: 0; padding: 30px; box-shadow: 0 0 40px 0 rgb(0, 0, 0, 0.2); }
+.kneeler .card { border-radius: 20px; border: 0; padding: 50px; box-shadow: 0 0 40px 0 rgb(0, 0, 0, 0.2); }
 .kneeler .clients-logo img { mix-blend-mode: lighten; }
 
 /* Fold: Testimonials */
-.fold-testimonials { position: relative; overflow: hidden; }
+.fold-testimonials { position: relative; overflow: hidden; min-height: 0; }
 .fold-testimonials:before,
 .fold-testimonials:after { position: absolute; height: 300px; width: 300px; opacity: 0.1; }
 .fold-testimonials:before,

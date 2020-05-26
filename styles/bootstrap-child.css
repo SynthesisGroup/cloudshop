@@ -23,8 +23,10 @@ body.home .navbar .navbar-nav .nav-1 {}
 .navbar-toggler:hover i {}
 
 /* Custom Buttons */
-.btn { border-radius: 50px; border: 0; color: #FFFFFF; transition: all 0.5s; padding: 8px 32px; }
+.btn { border-radius: 5px; border: 0; color: #FFFFFF; transition: all 0.5s; padding: 8px 32px; }
 .btn { font-family: 'Roboto'; }
+.btn:focus,
+.btn:active { outline: none !important; box-shadow: none; }
 .btn:hover { color: #FFFFFF; }
 .btn-primary { background: #EC254C; }
 .btn-primary:hover { background: #330066; }
@@ -39,8 +41,8 @@ body.home .navbar .navbar-nav .nav-1 {}
 .btn.disable:hover { border-color: #CCC !important; background: none !important; cursor: default; }
 
 .btn.btn-sm { padding: 5px 20px; font-size: 80%; }
-.btn.btn-md { padding: 14px 40px; font-size: 120%; }
-.btn.btn-lg { padding: 20px 40px; font-size: 140%; }
+.btn.btn-md { padding: 7px 40px; font-size: 120%; }
+.btn.btn-lg { padding: 14px 40px; font-size: 140%; }
 
 /* Form Control */
 .form-control { height: 50px; padding: 15px; font-size: 16px; color: #FFF; border: 0; }

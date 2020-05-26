@@ -95,6 +95,13 @@ $(window).load(function() {
 	$(".se-pre-con").fadeOut("slow");;
 });
 
+// Change text on collapse
+$('.btn-more').click(function() {
+	$(this).text(function(i,old) {
+		return old=='Read More' ?  'Read Less' : 'Read More';
+	});
+});
+
 // ScrollReveal
 ScrollReveal({ distance: '60px', delay: '200', duration: 1000, });
 ScrollReveal().reveal('.sr-in');
