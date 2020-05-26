@@ -24,7 +24,6 @@ body.home .navbar .navbar-nav .nav-1 {}
 
 /* Custom Buttons */
 .btn { border-radius: 5px; border: 0; color: #FFFFFF; transition: all 0.5s; padding: 8px 32px; }
-.btn { font-family: 'Roboto'; }
 .btn:focus,
 .btn:active { outline: none !important; box-shadow: none; }
 .btn:hover { color: #FFFFFF; }

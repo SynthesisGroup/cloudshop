@@ -15,22 +15,42 @@
 		<link href="styles/responsive.css" rel="stylesheet">
 	</head>
 
-	<body class="home">
+	<body data-spy="scroll" data-target="#nav_menu">
 		<!-- .se-pre-con -->
 		<div class="se-pre-con">
 			<img src="images/loader.gif" alt="" />
 		</div>
 		<!-- /.se-pre-con -->
-	
-		<!-- #top -->
-		<a name="top" id="top"></a>
-		<!-- /#top -->
 		
 		<!-- .floaters -->
 		<div class="floaters">
 			<!-- -->
 			<div>
-				<a href="#top" class="btn" data-toggle="tooltip" data-placement="left" title="Back to Top">
+				<a href="#" class="btn" data-toggle="tooltip" data-placement="left" title="Instagram">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+			<!-- / -->
+			
+			<!-- -->
+			<div>
+				<a href="#" class="btn" data-toggle="tooltip" data-placement="left" title="Twitter">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+			<!-- / -->
+			
+			<!-- -->
+			<div>
+				<a href="#" class="btn" data-toggle="tooltip" data-placement="left" title="Facebook">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</div>
+			<!-- / -->
+			
+			<!-- -->
+			<div>
+				<a href="#home" class="btn" data-toggle="tooltip" data-placement="left" title="Back to Top">
 					<i class="fas fa-angle-up"></i>
 				</a>
 			</div>
@@ -55,12 +75,12 @@
 				<!-- #menu -->
 				<nav id="menu" class="panel" role="navigation">
 					<ul class="">
-						<li class="list-menu-item menu-1"><a href="#top" class="active">Home</a></li>
-						<li class="list-menu-item menu-3"><a href="#services">Services</a></li>
-						<li class="list-menu-item menu-2"><a href="#features">Features</a></li>
-						<li class="list-menu-item menu-5"><a href="#testimonials">Testimonials</a></li>
-						<li class="list-menu-item menu-6"><a href="#pricing">Pricing</a></li>
-						<li class="list-menu-item menu-7"><a href="#contact" class="btn btn-primary">Contact</a></li>
+						<li class="list-menu-item"><a class="nav-link" data-scroll href="#home">Home</a></li>
+						<li class="list-menu-item"><a class="nav-link" data-scroll href="#steps">Steps</a></li>
+						<li class="list-menu-item"><a class="nav-link" data-scroll href="#benefits">Benefits</a></li>
+						<li class="list-menu-item"><a class="nav-link" data-scroll href="#packages">Service Packages</a></li>
+						<li class="list-menu-item"><a class="nav-link" data-scroll href="#testimonials">Testimonials</a></li>
+						<li class="list-menu-item"><a class="nav-link" data-scroll href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 				<!-- /#menu -->
@@ -82,14 +102,14 @@
 						<!-- / -->
 
 						<!-- -->
-						<div class="col-md-9">
+						<div id="nav_menu" class="col-md-9">
 							<ul class="list-menu mt-1">
-								<li class="list-menu-item menu-1"><a href="#top" class="active">Home</a></li>
-								<li class="list-menu-item menu-3"><a href="#services">Services</a></li>
-								<li class="list-menu-item menu-2"><a href="#benefits">Benefits</a></li>
-								<li class="list-menu-item menu-6"><a href="#pricing">Pricing</a></li>
-								<li class="list-menu-item menu-5"><a href="#testimonials">Testimonials</a></li>
-								<li class="list-menu-item menu-7"><a href="#contact" class="btn btn-primary">Contact</a></li>
+								<li class="list-menu-item"><a class="nav-link" data-scroll href="#home">Home</a></li>
+								<li class="list-menu-item"><a class="nav-link" data-scroll href="#steps">Steps</a></li>
+								<li class="list-menu-item"><a class="nav-link" data-scroll href="#benefits">Benefits</a></li>
+								<li class="list-menu-item"><a class="nav-link" data-scroll href="#packages">Service Packages</a></li>
+								<li class="list-menu-item"><a class="nav-link" data-scroll href="#testimonials">Testimonials</a></li>
+								<li class="list-menu-item"><a class="nav-link btn btn-primary" data-scroll href="#contact">Contact</a></li>
 							</ul>
 						</div>
 						<!-- / -->
@@ -101,20 +121,20 @@
 			<!-- /.for-desktop -->
 		</header>
 		<!-- /header -->
-				
+			
 		<!-- .fold-main -->
-		<div class="fold fold-main parallax" data-parallax="scroll" data-image-src="images/bg-main-fold.png">
+		<div id="home" class="fold fold-main parallax" data-parallax="scroll" data-image-src="images/bg-main-fold.png">
 			<!-- .container -->
 			<div class="container">
 				<!-- -->
-				<div class="row">
+				<div class="row caption">
 					<!-- -->
 					<div class="col-md-6 align-self-center sr-right">
 						<h1 class="mb-3">Your Brand. Your Shop. Just Online</h1>
 						<h4 class="mb-5">Hi! We are cloudshop and we’re here to help you build your online store</h4>
 						<p>
-							<a href="#" class="btn btn-primary btn-md mr-4">Get Started</a>
-							<a href="#" class="btn btn-secondary btn-md">Learn More</a>
+							<a href="#contact" class="btn btn-primary btn-md mr-4">Get Started</a>
+							<a href="#services" class="btn btn-secondary btn-md">Learn More</a>
 						</p>
 					</div>
 					<!--/ -->
@@ -132,8 +152,7 @@
 		<!-- /.fold-main -->
 		
 		<!-- .fold-services -->
-		<a name="services" id="services"></a>
-		<div class="fold fold-services">
+		<div id="steps" class="fold fold-services">
 			<!-- .container -->
 			<div class="container">
 				<!-- .row -->
@@ -150,7 +169,7 @@
 				<!-- .row -->
 				<div class="row">
 					<!--  -->
-					<div class="col-md-4 sr-up">
+					<div class="col-md-4 sr-delay-1">
 						<!-- -->
 						<div class="step-icon">
 							<svg class="icon-store" viewBox="0 0 616 512">
@@ -166,7 +185,7 @@
 					<!-- / -->
 					
 					<!--  -->
-					<div class="col-md-4 sr-up">
+					<div class="col-md-4 sr-delay-2">
 						<!-- -->
 						<div class="step-icon">
 							<svg class="icon-store" viewBox="0 0 616 512">
@@ -179,12 +198,12 @@
 						
 						<span>2</span>
 						<h4><strong>Staff Your Shop</strong></h4>
-						<p>Let us hire and manage the right people to run your online business while you enjoy your Margaritas on the beach.</p>
+						<p>We can provide you with the right team to manage your online business while you enjoy your cup of joe.</p>
 					</div>
 					<!-- / -->
 					
 					<!--  -->
-					<div class="col-md-4 sr-up">
+					<div class="col-md-4 sr-delay-3">
 						<!-- -->
 						<div class="step-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -195,7 +214,7 @@
 						
 						<span>3</span>
 						<h4><strong>Start Selling/Earning</strong></h4>
-						<p>You can now start thinking about growing and scaling your online business with us.</p>
+						<p>Get your sales in and now start thinking about growing &amp; scaling your online business with us.</p>
 					</div>
 					<!-- / -->
 				</div>
@@ -206,8 +225,7 @@
 		<!-- /.fold-services -->
 		
 		<!-- .fold-benefits -->
-		<a name="benefits" id="benefits"></a>
-		<div class="fold fold-benefits">
+		<div id="benefits" class="fold fold-benefits parallax" data-parallax="scroll" data-image-src="images/bg-benefits.png">
 			<!-- .container -->
 			<div class="container">
 				<!-- .row -->
@@ -226,10 +244,10 @@
 					<!-- -->
 					<div class="col-md-3 column-left">
 						<!-- -->
-						<div class="card">
+						<div class="card sr-delay-1 sr-right">
 							<!-- -->
 							<div class="card-body">
-								<span><i class="fas fa-2x fa-chart-bar"></i></span>
+								<span><i class="fas fa-tags"></i></span>
 								<h5>Costs less than running a physical store</h5>
 							</div>
 							<!-- / -->	
@@ -237,10 +255,10 @@
 						<!-- / -->
 						
 						<!-- -->
-						<div class="card">
+						<div class="card sr-delay-2 sr-right">
 							<!-- -->
 							<div class="card-body">
-								<span><i class="fas fa-2x fa-chart-bar"></i></span>
+								<span><i class="fas fa-clock"></i></span>
 								<h5>Always online 24/7 365 days</h5>
 							</div>
 							<!-- / -->	
@@ -248,10 +266,10 @@
 						<!-- / -->
 						
 						<!-- -->
-						<div class="card">
+						<div class="card sr-delay-3 sr-right">
 							<!-- -->
 							<div class="card-body">
-								<span><i class="fas fa-2x fa-chart-bar"></i></span>
+								<span><i class="fas fa-chart-line"></i></span>
 								<h5>Easily scalable</h5>
 							</div>
 							<!-- / -->	
@@ -261,16 +279,12 @@
 					<!--/ -->
 					
 					<!-- -->
-					<div class="col-md-3"></div>
-					<!-- / -->
-					
-					<!-- -->
 					<div class="col-md-3 column-right">
 						<!-- -->
 						<div class="card">
 							<!-- -->
 							<div class="card-body">
-								<span><i class="fas fa-2x fa-chart-bar"></i></span>
+								<span><i class="fas fa-plane"></i></span>
 								<h5>Manage your <strong>business</strong> anywhere</h5>
 							</div>
 							<!-- / -->	
@@ -278,10 +292,10 @@
 						<!-- / -->
 						
 						<!-- -->
-						<div class="card">
+						<div class="card sr-delay-2 sr-left">
 							<!-- -->
 							<div class="card-body">
-								<span><i class="fas fa-2x fa-chart-bar"></i></span>
+								<span><i class="fas fa-users"></i></span>
 								<h5>Wider customer base</h5>
 							</div>
 							<!-- / -->	
@@ -289,7 +303,7 @@
 						<!-- / -->
 						
 						<!-- -->
-						<div class="card">
+						<div class="card sr-delay-3 sr-left">
 							<!-- -->
 							<div class="card-body">
 								<span><i class="fas fa-2x fa-chart-bar"></i></span>
@@ -308,8 +322,7 @@
 		<!-- /.fold-benefits -->
 		
 		<!-- .fold-pricing -->
-		<a name="pricing" id="pricing"></a>
-		<div class="fold fold-pricing">
+		<div id="packages" class="fold fold-pricing">
 			<!-- .container -->
 			<div class="container">
 				<!-- .row -->
@@ -328,7 +341,7 @@
 					<!--  -->
 					<div class="col-md-4">
 						<!-- -->
-						<div class="card basic">
+						<div class="card basic sr-delay-1">
 							<!-- -->
 							<div class="card-header">
 								<h2 class="mb-0">Basic</h2>
@@ -371,7 +384,7 @@
 					<!--  -->
 					<div class="col-md-4">
 						<!-- -->
-						<div class="card plus">
+						<div class="card plus sr-delay-2">
 							<!-- -->
 							<div class="card-header">
 								<h2 class="mb-0">Plus</h2>
@@ -419,7 +432,7 @@
 					<!--  -->
 					<div class="col-md-4">		
 						<!-- -->
-						<div class="card premium">
+						<div class="card premium sr-delay-3">
 							<!-- -->
 							<div class="card-header">
 								<h2 class="mb-0">Premium</h2>
@@ -483,8 +496,7 @@
 		<!-- /.fold-pricing -->
 		
 		<!-- .fold-testimonials -->
-		<a name="testimonials" id="testimonials"></a>
-		<div class="fold fold-testimonials">
+		<div id="testimonials" class="fold fold-testimonials sr-up">
 			<!-- .container -->
 			<div class="container">
 				<!-- .row -->
@@ -561,8 +573,7 @@
 		<!-- /.fold-testimonials -->
 		
 		<!-- kneeler -->
-		<a name="contact" id="contact"></a>
-		<div class="kneeler">
+		<div id="contact" class="kneeler">
 			<!-- .container -->
 			<div class="container">
 				<!-- .row -->
@@ -570,14 +581,14 @@
 					<!-- -->
 					<div class="col-md-8 text-center">
 						<!-- -->
-						<div class="card">
-							<h2 class="mb-1">Ask our CloudShop experts today</h2>
+						<div class="card sr-up">
+							<h2 class="mb-1">Get started today and open your very own cloudshop</h2>
 							<h4 class="mb-5">Illum cetero vocent ei vim case regione signiferumque vim tevelit</h4>
 							
 							<!-- -->
 							<form>
 								<!-- -->
-								<div class="row mb-2">
+								<div class="row mb-2 sr-up sr-delay-1">
 									<!-- -->
 									<div class="col-md-6">
 										<input type="text" class="form-control" placeholder="Full Name">
@@ -593,7 +604,7 @@
 								<!-- / -->
 								
 								<!-- -->
-								<div class="row mb-2">
+								<div class="row mb-2 sr-up sr-delay-2">
 									<!-- -->
 									<div class="col-md-6">
 										<input type="text" class="form-control" placeholder="Email Address *">
@@ -609,7 +620,7 @@
 								<!-- / -->
 								
 								<!-- -->
-								<div class="row mb-4">
+								<div class="row mb-4 sr-up sr-delay-3">
 									<!-- -->
 									<div class="col-md-12">
 										<textarea class="form-control" placeholder="Email Address *"></textarea>
@@ -619,7 +630,7 @@
 								<!-- / -->
 								
 								<!-- -->
-								<div class="row">
+								<div class="row sr-up sr-delay-4">
 									<!-- -->
 									<div class="col-md-12">
 										<button class="btn btn-primary">Get Started</button>
@@ -668,10 +679,50 @@
 			<!-- .container -->
 			<div class="container">
 				<!-- .row -->
+				<div class="row justify-content-around mb-5">
+					<!-- -->
+					<div class="col-md-3 sr-up sr-delay-1">
+						<ul class="list-unstyled list-contact mb-4">
+							<li class="contact-mobile">
+								<h5><strong>Contact Number</strong></h5>
+								<span>+63917-987-6543<br />+63917-987-6543</span>
+							</li>
+						</ul>
+					</div>
+					<!-- / -->
+					
+					<!-- -->
+					<div class="col-md-4 sr-up sr-delay-2">
+						<ul class="list-unstyled list-contact mb-4">
+							<li class="contact-address">
+								<h5><strong>Office Address</strong></h5>
+								<span>#1 Somewhere street, Somewhere Subdivision, Somewhere City, Philippines</span>
+							</li>
+						</ul>
+					</div>
+					<!-- / -->
+					
+					<!-- -->
+					<div class="col-md-3 sr-up sr-delay-3">
+						<ul class="list-unstyled list-contact mb-4">
+							<li class="contact-email">
+								<h5><strong>Email Address</strong></h5>
+								<a href="mailto:">email@address.com</a><br />
+								<a href="mailto:">info@offshoreoffice360.com</a>
+							</li>
+						</ul>
+					</div>
+					<!-- / -->
+				</div>
+				<!-- /.row -->
+				
+				<hr />
+				
+				<!-- .row -->
 				<div class="row">
 					<!-- -->
-					<div class="col-md-12 text-center">
-						<ul class="list-unstyled list-inline mb-1">
+					<div class="col-md-6">
+						<ul class="list-inline list-social mb-2 hidden">
 							<li class="list-inline-item">
 								<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
 							</li>
@@ -685,7 +736,17 @@
 								<a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
 							</li>
 						</ul>
-						<p class="mb-0">Copyright 2020 © CloudShop.com.ph All Rights Reserved</p>
+						<p class="mb-2">Copyright 2020 &copy; <a href="#home">YourCloudShop.com</a> All Rights Reserved</p>
+					</div>
+					<!-- / -->
+					
+					<!-- -->
+					<div class="col-md-6 text-right">
+						<ul class="list-inline mb-2">
+							<li class="list-inline-item"><a href="#">Terms of Use</a></li>
+							<li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+							<li class="list-inline-item">Site by <a href="#" target="_blank">Synthesis Group</a></li>
+						</ul>
 					</div>
 					<!-- / -->
 				</div>
@@ -701,8 +762,28 @@
 		<script src="scripts/parallax.js"></script>
 		<script src="scripts/menuFullpage.min.js"></script>
 		<script src="scripts/scrollreveal.js"></script>
+		<script src="scripts/smooth-scroll.js"></script>
 		<script src="scripts/scripts.js"></script>
 		<script type="text/javascript">
+			$('body').scrollspy({ offset: 100 })
+			var scroll = new SmoothScroll('a[href*="#"]', {
+				offset: 60,
+				speed: 1000
+			});
+			
+			ScrollReveal({ distance: '60px', delay: '200', duration: 1000, });
+			ScrollReveal().reveal('.sr-in');
+			ScrollReveal().reveal('.sr-up', 	{ origin: 'bottom' });
+			ScrollReveal().reveal('.sr-down', 	{ origin: 'top' });
+			ScrollReveal().reveal('.sr-left', 	{ origin: 'right' });
+			ScrollReveal().reveal('.sr-right', 	{ origin: 'left' });
+			
+			ScrollReveal().reveal('.sr-delay-1', { delay: '100' });
+			ScrollReveal().reveal('.sr-delay-2', { delay: '200' });
+			ScrollReveal().reveal('.sr-delay-3', { delay: '300' });
+			ScrollReveal().reveal('.sr-delay-4', { delay: '400' });
+			ScrollReveal().reveal('.sr-delay-5', { delay: '500' });
+			ScrollReveal().reveal('.sr-delay-6', { delay: '600' });
 		</script>
 	</body>
 </html>

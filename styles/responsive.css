@@ -3,6 +3,8 @@
 	.for-mobile { display: block; }
 	.for-desktop { display: none; }
 	
+	.mb-5 { margin-bottom: 20px !important; }
+	
 	h1 { font-size: 30px; line-height: 38px; margin-bottom: 20px; }
 	h2 { font-size: 22px; line-height: 30px; margin-bottom: 20px; }
 	h3 { font-size: 22px; line-height: 30px; margin-bottom: 10px; }
@@ -11,17 +13,49 @@
 	p  { font-size: 14px; line-height: 22px; margin-bottom: 10px; }
 	li { font-size: 14px; line-height: 22px; }
 	
-	.form-md { padding: 7px 20px; height: 44px; font-size: 100%; }
-	.form-lg { padding: 7px 20px; height: 44px; font-size: 100%; }
+	.fold { padding-top: 50px; padding-bottom: 50px; }
+	
+	.form-control { padding: 15px 0; font-size: 14px; }
+	
+	.form-md { padding: 7px 0; height: 44px; font-size: 100%; }
+	.form-lg { padding: 7px 0; height: 44px; font-size: 100%; }
 	
 	.btn.btn-md { padding: 7px 20px; font-size: 100%; }
 	.btn.btn-lg { padding: 7px 20px; font-size: 100%; }
 	
 	header { background: rgba(0, 0, 0, 1); }
 	
-	.layout-1 { padding: 0; }
-	.layout-1 .billboard { position: static; height: 400px; width: 100%; background-position: center; }
-	.layout-1 .context div { padding-top: 30px; padding-bottom: 30px; padding-left: 0; }
+	.fold-main { padding: 0; text-align: center; }
+	.fold-main .caption { margin-top: 100px; }
+	.fold-main-img img { max-width: 290px; }
+	
+	.fold-services .step-icon { height: 100px; width: 100px; }
+	.fold-services .step-icon svg { max-height: 40px; max-width: 40px; }
+	.fold-services span { font-size: 48px; height: 100px; width: 40px; }
+	
+	.fold-pricing .card-header { padding: 20px 0 0; }
+	
+	.fold-benefits .card { min-height: 0; }
+	.fold-benefits .card span { height: auto; width: auto; position: static; background-color: #FFFFFF; }
+	.fold-benefits .card span { color: #330066; transform: translate(0, 0); margin-right: 20px; }
+	.fold-benefits .card span i { font-size: 32px; }
+	
+	.fold-benefits .column-right .card { padding-left: 0; }
+	.fold-benefits .column-left .card { padding-right: 0; }
+	.fold-benefits .column-left .card-body { justify-content: flex-start; text-align: left; }
+	
+	.fold-testimonials { text-align: center; }
+	.fold-testimonials:before,
+	.fold-testimonials:after { height: 100px; width: 100px; }
+	
+	.kneeler { padding-top: 20px; padding-bottom: 0; }
+	.kneeler .card { padding: 30px; }
+	
+	footer { padding-top: 40px; padding-right: 50px; }
+	footer .text-right { text-align: left !important; }
+	
+	.floaters { bottom: 20px; }
+	.floaters.show { right: 20px; }
 }
 
 /* 480  */
@@ -37,6 +71,8 @@
 	.for-mobile { display: none; }
 	.for-desktop { display: block; }
 	
+	.mb-5 { margin-bottom: 3rem !important; }
+	
 	h1 { font-size: 48px; line-height: 56px; margin-bottom: 30px; }
 	h2 { font-size: 40px; line-height: 48px; margin-bottom: 30px; }
 	h3 { font-size: 36px; line-height: 44px; margin-bottom: 20px; }
@@ -44,6 +80,10 @@
 	h5 { font-size: 18px; line-height: 26px; }
 	p  { font-size: 16px; line-height: 24px; margin-bottom: 20px; }
 	li { font-size: 16px; line-height: 24px; }
+	
+	.fold { padding-top: 100px; padding-bottom: 100px; }
+	
+	.form-control { padding: 15px; font-size: 16px; }
 	
 	.btn.btn-md { padding: 12px 48px; font-size: 110%; }
 	.btn.btn-lg { padding: 15px 56px; font-size: 120%; }
@@ -55,16 +95,41 @@
 	header .for-mobile { display: block; }
 	header .for-desktop { display: none; }
 	
-	.content { padding: 70px 0; }
+	.fold-main { padding: 0; text-align: left; }
+	.fold-main .caption { margin-top: 0; }
+	.fold-main-img img { max-width: 480px; }
 	
-	.layout-1 { padding: 0; }
-	.layout-1 .context { flex: 0 0 100%; max-width: 100%; }
+	.fold-services .step-icon { height: 140px; width: 140px; }
+	.fold-services .step-icon svg { max-height: 60px; max-width: 60px; }
+	.fold-services span { font-size: 104px; height: 160px; width: 80px; }
+	
+	.fold-pricing .card-header { padding: 50px 0; }
+	
+	.fold-benefits .card { min-height: 100px; }
+	.fold-benefits .card span { height: 70px; width: 70px; position: absolute; background-color: #330066; }
+	.fold-benefits .card span { color: #FFFFFF; transform: translate(0, -50%); margin-right: 0; }
+	.fold-benefits .card span i { font-size: 20px;}
+	
+	.fold-benefits .column-right .card { padding-left: 35px; }
+	.fold-benefits .column-left .card { padding-right: 35px; }
+	.fold-benefits .column-left .card-body { justify-content: flex-end; text-align: right; }
+	
+	.fold-testimonials { text-align: left; }
+	.fold-testimonials:before,
+	.fold-testimonials:after { height: 300px; width: 300px; }
+	
+	.kneeler { padding-top: 80px; padding-bottom: 40px; }
+	.kneeler .card { padding: 50px; }
+	
+	footer { padding-top: 70px; padding-right: 0; }
+	footer .text-right { text-align: right !important; }
+	
+	.floaters { bottom: 30px; }
+	.floaters.show { right: 30px; }
 }
 
 /* 960 */
 @media (min-width: 960px) {
-	.layout-1 .billboard { position: absolute; height: 100%; width: 50%; background-position: right; }
-	.layout-1 .context { flex: 0 0 50%; max-width: 50%; }
 }
 
 /* 1024 */
@@ -75,7 +140,6 @@
 
 /* 1100 */
 @media (min-width: 1100px) {
-	.layout-1 .context div { padding-top: 100px; padding-bottom: 100px; padding-left: 70px; }
 }
 
 /* 1260 */
