@@ -25,7 +25,7 @@ strong { font-family: 'Proxima Nova Bold'; }
 .hidden { display: none; z-index: -1000 !important; }
 .required { color: red; font-weight: bold; }
 
-.fold { padding-top: 100px; padding-bottom: 100px; overflow-x: hidden; min-height: 100vh; }
+.fold { padding-top: 160px; padding-bottom: 100px; overflow-x: hidden; min-height: 100vh; }
 .fold { background-position: center; background-repeat: no-repeat; background-attachment: fixed; }
 
 /* Line Heights */
@@ -75,7 +75,22 @@ header .list-menu-item .btn:hover { color: #FFF; }
 .fold-main { padding-top: 0; padding-bottom: 0; color: #FFFFFF; overflow: hidden; }
 .fold-main .container { max-width: 1100px; }
 .fold-main .container .row { height: 100vh; display: flex; }
-.fold-main-img img { max-width: 480px; }
+
+.fold-main-img { position: relative; }
+.fold-main-img img { /*max-width: 480px;*/ }
+.fold-main-img .ghost { position: absolute; transform: translate(-50% -50%); background-color: #330066; width: 70px; height: 70px; }
+.fold-main-img .ghost { border-radius: 50%; animation: glowing 2s infinite; justify-content: center; display: flex; }
+.fold-main-img .ghost svg { color: #FFFFFF; fill: #FFFFFF; align-self: center; max-height: 35px; max-width: 35px; } 
+
+.fold-main-img .icon-1 { top: 15%; left: 0; }
+.fold-main-img .icon-2 { bottom: 10%; right: 20%; }
+
+.fold-main-img .icon-shopify { background-color: #7CBB28; top: 40%; right: 10%; width: 80px; height: 80px; }
+.fold-main-img .icon-shopify svg { max-height: 40px; max-width: 40px; }
+.fold-main-img .icon-facebook { background-color: #4064AD; bottom: 30%; left: 10%; width: 90px; height: 90px; }
+.fold-main-img .icon-facebook svg { max-height: 45px; max-width: 45px; }
+.fold-main-img .icon-ecommerce { background-color: #EC254C; top: 10px; left: 40%; width: 100px; height: 100px; }
+.fold-main-img .icon-ecommerce svg { max-height: 50px; max-width: 50px; }
 
 /* Fold: Services */
 .fold-services .step-icon { height: 140px; width: 140px; background-color: #B81F68; margin: 0 auto 30px; }
@@ -183,14 +198,31 @@ footer .list-contact .contact-email:before		{ content: "\f0e0"; }
 .floaters .btn { border: 0; background: #B81F68 !important; color: #FFF !important; border-radius: 50%; }
 .floaters .btn { width: 50px; height: 50px; display: flex; padding: 0; text-align: center; opacity: 0.5; }
 .floaters .btn { box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2); align-items: center; justify-content: center; }
-.floaters .btn:hover { opacity: 1; animation: glowing 2s infinite;  }
+.floaters .btn:hover { opacity: 1; animation: beating 2s infinite; }
 .floaters > div { margin-top: 10px; }
 .floaters.show { right: 30px; }
 
-@keyframes glowing {
+/* Animations */
+@keyframes beating {
 	0%		{ box-shadow: 0 0 0  5px rgba(184, 31 ,104, 0.2); }
 	25% 	{ box-shadow: 0 0 0 10px rgba(184, 31 ,104, 0.2); }
 	50% 	{ box-shadow: 0 0 0  5px rgba(184, 31 ,104, 0.2); }
 	75% 	{ box-shadow: 0 0 0 10px rgba(184, 31 ,104, 0.2); }
 	100% 	{ box-shadow: 0 0 0  5px rgba(184, 31 ,104, 0.2); }
+}
+
+@keyframes glowing {
+	0%		{ box-shadow: 0 0 0  5px rgba(255, 255 ,255, 0.2); }
+	25% 	{ box-shadow: 0 0 0 10px rgba(255, 255 ,255, 0.2); }
+	50% 	{ box-shadow: 0 0 0  5px rgba(255, 255 ,255, 0.2); }
+	75% 	{ box-shadow: 0 0 0 10px rgba(255, 255 ,255, 0.2); }
+	100% 	{ box-shadow: 0 0 0  5px rgba(255, 255 ,255, 0.2); }
+}
+
+@keyframes floating {
+	0%		{ margin-top: 0; }
+	25% 	{ margin-top: -2px; }
+	50% 	{ margin-top: 0; }
+	75% 	{ margin-top: -2px; }
+	100% 	{ margin-top: 0; }
 }
