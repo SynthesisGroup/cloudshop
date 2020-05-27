@@ -23,7 +23,8 @@ body.home .navbar .navbar-nav .nav-1 {}
 .navbar-toggler:hover i {}
 
 /* Custom Buttons */
-.btn { border-radius: 5px; border: 0; color: #FFFFFF; transition: all 0.5s; padding: 8px 32px; }
+.btn { border-radius: 5px; border: 0; color: #FFFFFF; transition: all 0.5s; padding: 8px 32px; margin: 0 20px 20px 0; }
+.btn:last-child { margin-right: 0; }
 .btn:focus,
 .btn:active { outline: none !important; box-shadow: none; }
 .btn:hover { color: #FFFFFF; }

@@ -25,7 +25,7 @@
 		<!-- .floaters -->
 		<div class="floaters">
 			<!-- -->
-			<div>
+			<div class="hidden">
 				<a href="#" class="btn" data-toggle="tooltip" data-placement="left" title="Instagram">
 					<i class="fab fa-instagram"></i>
 				</a>
@@ -33,7 +33,7 @@
 			<!-- / -->
 			
 			<!-- -->
-			<div>
+			<div class="hidden">
 				<a href="#" class="btn" data-toggle="tooltip" data-placement="left" title="Twitter">
 					<i class="fab fa-twitter"></i>
 				</a>
@@ -41,7 +41,7 @@
 			<!-- / -->
 			
 			<!-- -->
-			<div>
+			<div class="hidden">
 				<a href="#" class="btn" data-toggle="tooltip" data-placement="left" title="Facebook">
 					<i class="fab fa-facebook-f"></i>
 				</a>
@@ -61,10 +61,10 @@
 		<!-- header -->
 		<header id="header">
 			<!-- .for-mobile -->
-			<div class="for-mobile">
+			<div class="for-mobile sr-down">
 				<!-- -->
 				<div class="main-logo">
-					<a href="#top"><img src="images/logo-cloudshop-white.png" class="img-fluid" alt=""></a>
+					<a href="#home"><img src="images/logo-cloudshop-white.png" class="img-fluid" alt=""></a>
 				</div>
 				<!-- / -->
 
@@ -92,12 +92,12 @@
 			<!-- .for-desktop -->
 			<div class="for-desktop">
 				<!-- .container -->
-				<div class="container">
+				<div class="container sr-down">
 					<!-- .row -->
 					<div class="row">
 						<!-- -->
 						<div class="col-md-3 main-logo">
-							<a href="#top"><img src="images/logo-cloudshop-white.png" class="img-fluid" alt=""></a>
+							<a href="#home"><img src="images/logo-cloudshop-white.png" class="img-fluid" alt=""></a>
 						</div>
 						<!-- / -->
 
@@ -129,7 +129,7 @@
 				<!-- -->
 				<div class="row caption">
 					<!-- -->
-					<div class="col-md-5 align-self-center sr-right">
+					<div class="col-md-4 align-self-center sr-right">
 						<h1 class="mb-3">Your Brand. Your Shop. Just Online</h1>
 						<h4 class="mb-5">Hi! We are cloudshop and we’re here to help you build your online store</h4>
 						<p>
@@ -140,7 +140,7 @@
 					<!--/ -->
 
 					<!-- -->
-					<div class="col-md-7 fold-main-img ghosts align-self-end sr-left">
+					<div class="col-md-8 fold-main-img ghosts align-self-center sr-left">
 						<!-- -->
 						<div class="ghost icon-1 sr-up sr-delay-1">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -181,7 +181,8 @@
 						</div>
 						<!-- / -->
 						
-						<img src="images/img-iphones.png" class="img-fluid" alt="">
+						<img src="images/img-iphones.png" class="img-fluid for-mobile" alt="">
+						<img src="images/img-happy-shopper.png" class="img-fluid for-desktop" alt="">
 					</div>
 					<!--/ -->
 				</div>
@@ -209,7 +210,7 @@
 				<!-- .row -->
 				<div class="row">
 					<!--  -->
-					<div class="col-md-4 sr-delay-1">
+					<div class="col-md-4 mb-5 sr-delay-1">
 						<!-- -->
 						<div class="step-icon">
 							<svg class="icon-store" viewBox="0 0 616 512">
@@ -225,7 +226,7 @@
 					<!-- / -->
 					
 					<!--  -->
-					<div class="col-md-4 sr-delay-2">
+					<div class="col-md-4 mb-5 sr-delay-2">
 						<!-- -->
 						<div class="step-icon">
 							<svg class="icon-store" viewBox="0 0 616 512">
@@ -243,7 +244,7 @@
 					<!-- / -->
 					
 					<!--  -->
-					<div class="col-md-4 sr-delay-3">
+					<div class="col-md-4 mb-5 sr-delay-3">
 						<!-- -->
 						<div class="step-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -265,7 +266,7 @@
 		<!-- /.fold-services -->
 		
 		<!-- .fold-benefits -->
-		<div id="benefits" class="fold fold-benefits parallax" data-parallax="scroll" data-image-src="images/bg-benefits.png">
+		<div id="benefits" class="fold fold-benefits">
 			<!-- .container -->
 			<div class="container">
 				<!-- .row -->
@@ -280,11 +281,11 @@
 				<!--/ -->
 				
 				<!-- .row -->
-				<div class="row justify-content-around">
+				<div class="row justify-content-between">
 					<!-- -->
 					<div class="col-md-3 column-left">
 						<!-- -->
-						<div class="card sr-delay-1 sr-right">
+						<div class="card card-1 sr-delay-1 sr-right">
 							<!-- -->
 							<div class="card-body">
 								<span><i class="fas fa-tags"></i></span>
@@ -295,7 +296,7 @@
 						<!-- / -->
 						
 						<!-- -->
-						<div class="card sr-delay-2 sr-right">
+						<div class="card card-2 sr-delay-2 sr-right">
 							<!-- -->
 							<div class="card-body">
 								<span><i class="fas fa-clock"></i></span>
@@ -306,7 +307,7 @@
 						<!-- / -->
 						
 						<!-- -->
-						<div class="card sr-delay-3 sr-right">
+						<div class="card card-3 sr-delay-3 sr-right">
 							<!-- -->
 							<div class="card-body">
 								<span><i class="fas fa-chart-line"></i></span>
@@ -321,7 +322,7 @@
 					<!-- -->
 					<div class="col-md-3 column-right">
 						<!-- -->
-						<div class="card">
+						<div class="card card-1 sr-delay-1 sr-left">
 							<!-- -->
 							<div class="card-body">
 								<span><i class="fas fa-plane"></i></span>
@@ -332,7 +333,7 @@
 						<!-- / -->
 						
 						<!-- -->
-						<div class="card sr-delay-2 sr-left">
+						<div class="card card-2 sr-delay-2 sr-left">
 							<!-- -->
 							<div class="card-body">
 								<span><i class="fas fa-users"></i></span>
@@ -343,7 +344,7 @@
 						<!-- / -->
 						
 						<!-- -->
-						<div class="card sr-delay-3 sr-left">
+						<div class="card card-3 sr-delay-3 sr-left">
 							<!-- -->
 							<div class="card-body">
 								<span><i class="fas fa-2x fa-chart-bar"></i></span>
@@ -413,7 +414,8 @@
 
 							<!-- -->
 							<div class="card-footer">
-								<a href="#" class="btn btn-more btn-tertiary" data-toggle="collapse" data-target="#plan_1">Read More</a>
+								<a href="#" class="btn btn-more btn-tertiary" data-toggle="collapse" data-target="#plan_1">Learn More</a>
+								<a href="#contact" class="btn btn-more btn-tertiary">Inquire Now</a>
 							</div>
 							<!-- / -->
 						</div>
@@ -462,6 +464,7 @@
 							<!-- -->
 							<div class="card-footer">
 								<a href="#" class="btn btn-more btn-quartenary" data-toggle="collapse" data-target="#plan_2">Read More</a>
+								<a href="#contact" class="btn btn-more btn-quartenary">Inquire Now</a>
 							</div>
 							<!-- / -->
 						</div>
@@ -522,6 +525,7 @@
 							<!-- -->
 							<div class="card-footer">
 								<a href="#" class="btn btn-more btn-tertiary" data-toggle="collapse" data-target="#plan_3">Read More</a>
+								<a href="#contact" class="btn btn-more btn-tertiary">Inquire Now</a>
 							</div>
 							<!-- / -->
 						</div>
@@ -564,7 +568,7 @@
 									<div class="row">
 										<!-- -->
 										<div class="col-md-3 slide-img">
-											<div><img src="images/img-person.jpg" class="img-fluid" alt=""></div>
+											<div><img src="images/img-client-1.jpg" class="img-fluid" alt=""></div>
 										</div>
 										<!--/ -->
 
@@ -585,7 +589,28 @@
 									<div class="row">
 										<!-- -->
 										<div class="col-md-3 slide-img">
-											<div><img src="images/img-person.jpg" class="img-fluid" alt=""></div>
+											<div><img src="images/img-client-2.jpg" class="img-fluid" alt=""></div>
+										</div>
+										<!--/ -->
+
+										<!-- -->
+										<div class="col-md-9">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+											<p><strong>Sear Cumferencs</strong><br /><em>Customer</em></p>
+										</div>
+										<!--/ -->
+									</div>
+									<!-- / -->
+								</div>
+								<!-- /.carousel-item -->
+								
+								<!-- .carousel-item -->
+								<div class="carousel-item">
+									<!-- -->
+									<div class="row">
+										<!-- -->
+										<div class="col-md-3 slide-img">
+											<div><img src="images/img-client-3.jpg" class="img-fluid" alt=""></div>
 										</div>
 										<!--/ -->
 
@@ -631,13 +656,13 @@
 								<div class="row mb-2 sr-up sr-delay-1">
 									<!-- -->
 									<div class="col-md-6">
-										<input type="text" class="form-control" placeholder="Full Name">
+										<input type="text" class="form-control" placeholder="Full Name *">
 									</div>
 									<!-- / -->
 									
 									<!-- -->
 									<div class="col-md-6">
-										<input type="text" class="form-control" placeholder="Store name">
+										<input type="text" class="form-control" placeholder="Store Name *">
 									</div>
 									<!-- / -->
 								</div>
@@ -663,7 +688,7 @@
 								<div class="row mb-4 sr-up sr-delay-3">
 									<!-- -->
 									<div class="col-md-12">
-										<textarea class="form-control" placeholder="Email Address *"></textarea>
+										<textarea class="form-control" placeholder="Message *"></textarea>
 									</div>
 									<!-- / -->
 								</div>
@@ -721,11 +746,22 @@
 				<!-- .row -->
 				<div class="row justify-content-around mb-5">
 					<!-- -->
-					<div class="col-md-3 sr-delay-1 sr-up">
-						<ul class="list-unstyled list-contact mb-4">
+					<div class="col-md-2 sr-delay-1 sr-up">
+						<ul class="list-unstyled list-about mb-4">
 							<li class="contact-mobile">
-								<h5><strong>Contact Number</strong></h5>
-								<span>+63917-987-6543<br />+63917-987-6543</span>
+								<a href="#home"><img src="images/icon-cloudshop-white.png" class="img-fluid" /></a>
+							</li>
+						</ul>
+					</div>
+					<!-- / -->
+					
+					<!-- -->
+					<div class="col-md-3 sr-delay-3 sr-up">
+						<ul class="list-unstyled list-contact mb-4">
+							<li class="contact-email">
+								<h5><strong>Email Address</strong></h5>
+								<a href="mailto:">email@address.com</a><br />
+								<a href="mailto:">info@offshoreoffice360.com</a>
 							</li>
 						</ul>
 					</div>
@@ -743,12 +779,11 @@
 					<!-- / -->
 					
 					<!-- -->
-					<div class="col-md-3 sr-delay-3 sr-up">
+					<div class="col-md-3 sr-delay-1 sr-up">
 						<ul class="list-unstyled list-contact mb-4">
-							<li class="contact-email">
-								<h5><strong>Email Address</strong></h5>
-								<a href="mailto:">email@address.com</a><br />
-								<a href="mailto:">info@offshoreoffice360.com</a>
+							<li class="contact-mobile">
+								<h5><strong>Contact Number</strong></h5>
+								<span>+63917-987-6543<br />+63917-987-6543</span>
 							</li>
 						</ul>
 					</div>

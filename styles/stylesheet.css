@@ -50,13 +50,14 @@ header .main-logo img { max-height: 60px; transition: all 0.3s; }
 header .for-desktop { padding-top: 30px; transition: all 0.3s; }
 
 header .for-mobile { padding: 15px; }
-header .for-mobile img { max-width: 240px; max-height: 50px; }
+header .for-mobile img { max-width: 240px; max-height: 40px; margin-top: 5px; }
 header .for-mobile .list-menu-item { display: block; }
 header .for-mobile .list-menu-item { margin: 0; }
 header .for-mobile .list-menu-item a { text-indent: 0 !important; }
 
 header.append { background: rgba(0, 0, 0, 1); }
 header.append .for-desktop { padding-top: 20px; }
+header.append .for-mobile .main-logo img { max-height: 40px; }
 header.append .main-logo img { max-height: 50px; }
 
 header .list-menu { text-align: right; margin-bottom: 0; padding-left: 0; }
@@ -73,7 +74,7 @@ header .list-menu-item .btn:hover { color: #FFF; }
 
 /* Fold: Main */
 .fold-main { padding-top: 0; padding-bottom: 0; color: #FFFFFF; overflow: hidden; }
-.fold-main .container { max-width: 1100px; }
+.fold-main .container { /*max-width: 1100px;*/ }
 .fold-main .container .row { height: 100vh; display: flex; }
 
 .fold-main-img { position: relative; }
@@ -82,18 +83,18 @@ header .list-menu-item .btn:hover { color: #FFF; }
 .fold-main-img .ghost { border-radius: 50%; animation: glowing 2s infinite; justify-content: center; display: flex; }
 .fold-main-img .ghost svg { color: #FFFFFF; fill: #FFFFFF; align-self: center; max-height: 35px; max-width: 35px; } 
 
-.fold-main-img .icon-1 { top: 15%; left: 0; }
-.fold-main-img .icon-2 { bottom: 10%; right: 20%; }
+.fold-main-img .icon-1 { top: 20%; left: 20%; }
+.fold-main-img .icon-2 { bottom: 0; right: 40%; }
 
 .fold-main-img .icon-shopify { background-color: #7CBB28; top: 40%; right: 10%; width: 80px; height: 80px; }
 .fold-main-img .icon-shopify svg { max-height: 40px; max-width: 40px; }
-.fold-main-img .icon-facebook { background-color: #4064AD; bottom: 30%; left: 10%; width: 90px; height: 90px; }
+.fold-main-img .icon-facebook { background-color: #4064AD; bottom: 20%; left: 10%; width: 90px; height: 90px; }
 .fold-main-img .icon-facebook svg { max-height: 45px; max-width: 45px; }
-.fold-main-img .icon-ecommerce { background-color: #EC254C; top: 10px; left: 40%; width: 100px; height: 100px; }
+.fold-main-img .icon-ecommerce { background-color: #EC254C; top: 10%; right: 25%; width: 100px; height: 100px; }
 .fold-main-img .icon-ecommerce svg { max-height: 50px; max-width: 50px; }
 
 /* Fold: Services */
-.fold-services .step-icon { height: 140px; width: 140px; background-color: #B81F68; margin: 0 auto 30px; }
+.fold-services .step-icon { height: 140px; width: 140px; background-color: #B81F68; margin: 0 auto 20px; }
 .fold-services .step-icon { border-radius: 50%; box-shadow: 0 0 0 0 rgb(184, 31, 104, 0.5); }
 .fold-services .step-icon { transition: all 0.3s; display: flex; justify-content: center; }
 .fold-services .step-icon svg { fill: #FFFFFF; max-height: 60px; max-width: 60px; align-self: center; }
@@ -107,8 +108,9 @@ header .list-menu-item .btn:hover { color: #FFF; }
 .fold-features .btn-primary:hover { background-color: #000000; }
 
 /* Fold: Benefits */
-.fold-benefits { color: #FFFFFF; }
-.fold-benefits .card { border: 0; border-radius: 0; margin-bottom: 20px; position: relative; }
+.fold-benefits { background-image: url(../images/bg-benefits.png); background-color: #F36523; color: #FFFFFF; }
+.fold-benefits { background-attachment: scroll; background-size: 30%; background-position: bottom; }
+.fold-benefits .card { border: 0; border-radius: 5px; margin-bottom: 20px; position: relative; }
 .fold-benefits .card { min-height: 100px; box-shadow: 0 0 40px 0 rgb(255, 102, 0, 0.2); }
 .fold-benefits .card-body { color: #000000; display: flex; align-items: center; }
 
@@ -118,13 +120,19 @@ header .list-menu-item .btn:hover { color: #FFF; }
 .fold-benefits .card span:hover {  box-shadow: 0 0 0 10px rgb(184, 31, 104, 0.5); background-color: #B81F68; }
 .fold-benefits .card span i { font-size: 20px; transition: all 0.3s; }
 
-.fold-benefits .column-left .card { padding-right: 35px; }
+.fold-benefits .column-left .card { padding-right: 35px; position: relative; }
 .fold-benefits .column-left .card-body { justify-content: flex-end; text-align: right; }
 .fold-benefits .column-left .card span { right: -35px; }
+.fold-benefits .column-left .card-1 { right: -75px; }
+.fold-benefits .column-left .card-2 { right: -50px; }
+.fold-benefits .column-left .card-3 { right: -25px; }
 
 .fold-benefits .column-right .card { padding-left: 35px; }
 .fold-benefits .column-right .card-body { justify-content: flex-start; text-align: left; }
 .fold-benefits .column-right .card span { left: -35px; }
+.fold-benefits .column-right .card-1 { left: -75px; }
+.fold-benefits .column-right .card-2 { left: -52px; }
+.fold-benefits .column-right .card-3 { left: -25px; }
 
 /* Fold: Pricing */
 .fold-pricing { background-color: rgba(200, 200, 200, 0.2); }
@@ -172,6 +180,10 @@ footer a { color: #FFFFFF; }
 footer a:hover { color: #F36523; }
 footer hr { border-color: rgba(255, 255, 255, 0.1); margin-bottom: 40px; }
 
+footer .list-about li { padding: 0; }
+footer .list-about li a img { max-height: 80px; opacity: 0.2; }
+footer .list-about li a:hover img { opacity: 1; }
+
 footer .list-social a { font-size: 24px; width: 32px; height: 32px; }
 footer .list-social a { display: flex; justify-content: center; align-items: center; position: absolute; top: 0; left: 0; }
 footer .list-social a:hover { color: #FFFFFF; margin-top: -10px; }
@@ -217,12 +229,4 @@ footer .list-contact .contact-email:before		{ content: "\f0e0"; }
 	50% 	{ box-shadow: 0 0 0  5px rgba(255, 255 ,255, 0.2); }
 	75% 	{ box-shadow: 0 0 0 10px rgba(255, 255 ,255, 0.2); }
 	100% 	{ box-shadow: 0 0 0  5px rgba(255, 255 ,255, 0.2); }
-}
-
-@keyframes floating {
-	0%		{ margin-top: 0; }
-	25% 	{ margin-top: -2px; }
-	50% 	{ margin-top: 0; }
-	75% 	{ margin-top: -2px; }
-	100% 	{ margin-top: 0; }
 }

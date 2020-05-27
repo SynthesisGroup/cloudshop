@@ -26,8 +26,7 @@
 	header { background: rgba(0, 0, 0, 1); }
 	
 	.fold-main { padding: 0; text-align: center; }
-	.fold-main .caption { margin-top: 100px; }
-	.fold-main-img img { /*max-width: 290px;*/ }
+	.fold-main .caption { padding: 100px 30px 0; }
 	
 	.fold-services .step-icon { height: 100px; width: 100px; }
 	.fold-services .step-icon svg { max-height: 40px; max-width: 40px; }
@@ -35,14 +34,16 @@
 	
 	.fold-pricing .card-header { padding: 20px 0 0; }
 	
+	.fold-benefits { background-size: contain; background-position: center 100px; }
 	.fold-benefits .card { min-height: 0; }
 	.fold-benefits .card span { height: auto; width: auto; position: static; background-color: #FFFFFF; }
 	.fold-benefits .card span { color: #330066; transform: translate(0, 0); margin-right: 20px; }
 	.fold-benefits .card span i { font-size: 32px; }
 	
-	.fold-benefits .column-right .card { padding-left: 0; }
+	.fold-benefits .column-left { margin-top: 360px; }
 	.fold-benefits .column-left .card { padding-right: 0; }
 	.fold-benefits .column-left .card-body { justify-content: flex-start; text-align: left; }
+	.fold-benefits .column-right .card { padding-left: 0; }
 	
 	.fold-testimonials { text-align: center; }
 	.fold-testimonials:before,
@@ -56,6 +57,9 @@
 	
 	.floaters { bottom: 20px; }
 	.floaters.show { right: 20px; }
+	
+	.fold-benefits .column-left .card,
+	.fold-benefits .column-right .card { position: static; }
 }
 
 /* 480  */
@@ -96,8 +100,7 @@
 	header .for-desktop { display: none; }
 	
 	.fold-main { padding: 0; text-align: left; }
-	.fold-main .caption { margin-top: 0; }
-	.fold-main-img img { /*max-width: 480px;*/ }
+	.fold-main .caption { margin-top: 0; padding: 0; }
 	
 	.fold-services .step-icon { height: 140px; width: 140px; }
 	.fold-services .step-icon svg { max-height: 60px; max-width: 60px; }
@@ -105,14 +108,18 @@
 	
 	.fold-pricing .card-header { padding: 50px 0; }
 	
+	.fold-benefits { background-size: 30%; background-position: bottom; }
 	.fold-benefits .card { min-height: 100px; }
 	.fold-benefits .card span { height: 70px; width: 70px; position: absolute; background-color: #330066; }
 	.fold-benefits .card span { color: #FFFFFF; transform: translate(0, -50%); margin-right: 0; }
 	.fold-benefits .card span i { font-size: 20px;}
 	
-	.fold-benefits .column-right .card { padding-left: 35px; }
+	.fold-benefits .column-left { margin-top: 0; }
 	.fold-benefits .column-left .card { padding-right: 35px; }
 	.fold-benefits .column-left .card-body { justify-content: flex-end; text-align: right; }
+	.fold-benefits .column-left .card,
+	.fold-benefits .column-right .card { position: relative; }
+	.fold-benefits .column-right .card { padding-left: 35px; }
 	
 	.fold-testimonials { text-align: left; }
 	.fold-testimonials:before,
