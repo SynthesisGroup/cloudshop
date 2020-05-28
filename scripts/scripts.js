@@ -63,3 +63,33 @@ $('.btn-more').click(function() {
 		return old=='Read More' ?  'Read Less' : 'Read More';
 	});
 });
+
+// ScrollSpy
+$('body').scrollspy({ offset: 100 })
+var scroll = new SmoothScroll('a[href*="#"]', {
+	offset: 60,
+	speed: 1000
+});
+
+// ScrollReveal
+ScrollReveal({ distance: '60px', delay: '200', duration: 1000, });
+ScrollReveal().reveal('.sr-in');
+ScrollReveal().reveal('.sr-up', 	{ origin: 'bottom' });
+ScrollReveal().reveal('.sr-down', 	{ origin: 'top' });
+ScrollReveal().reveal('.sr-left', 	{ origin: 'right' });
+ScrollReveal().reveal('.sr-right', 	{ origin: 'left' });
+
+ScrollReveal().reveal('.sr-delay-1', { delay: '100' });
+ScrollReveal().reveal('.sr-delay-2', { delay: '200' });
+ScrollReveal().reveal('.sr-delay-3', { delay: '300' });
+ScrollReveal().reveal('.sr-delay-4', { delay: '400' });
+ScrollReveal().reveal('.sr-delay-5', { delay: '500' });
+ScrollReveal().reveal('.sr-delay-6', { delay: '600' });
+
+// Modal: Close Link
+$(document).ready(function(){
+    // Hide modal on button click
+    $(".link-close").click(function(){
+        $(".modal").modal('hide');
+    });
+});

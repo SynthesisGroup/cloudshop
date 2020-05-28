@@ -68,7 +68,7 @@ header .list-menu-item a:before { width: 0; height: 2px; bottom: 0; background-c
 header .list-menu-item a:hover,
 header .list-menu-item a.active { color: #F36523; }
 header .list-menu-item a:hover:before { width: 100%; }
-header .list-menu-item .btn { padding: 8px 32px; font-size: 14px; }
+header .list-menu-item .btn { padding: 8px 32px; font-size: 14px; margin-bottom: 0; }
 header .list-menu-item .btn:before { display: none; }
 header .list-menu-item .btn:hover { color: #FFF; }
 
@@ -182,7 +182,7 @@ footer hr { border-color: rgba(255, 255, 255, 0.1); margin-bottom: 40px; }
 
 footer .list-about li { padding: 0; }
 footer .list-about li a img { max-height: 80px; opacity: 0.2; }
-footer .list-about li a:hover img { opacity: 1; }
+footer .list-about li a:hover img { opacity: 1; margin-top: -10px; }
 
 footer .list-social a { font-size: 24px; width: 32px; height: 32px; }
 footer .list-social a { display: flex; justify-content: center; align-items: center; position: absolute; top: 0; left: 0; }

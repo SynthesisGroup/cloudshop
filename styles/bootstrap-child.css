@@ -71,3 +71,11 @@ input[type="color"]:focus,
 .form-sm { padding: 5px 20px; height: 32px; font-size: 80%; }
 .form-md { padding: 14px 30px; height: 62px; font-size: 120%; }
 .form-lg { padding: 20px 40px; height: 82px; font-size: 140%; }
+
+/* Modal */
+.modal-content { background-color: #330066; color: #FFFFFF; border-radius: 5px; }
+.modal-header { height: 60px; border-color: rgba(0, 0, 0, 0.4); }
+.modal-body { padding-right: 10px; height: calc(100vh - 120px); }
+.modal-body a { color: #FFFFFF; font-weight: bold; }
+.modal-body a:hover { color: #F36523; }
+.modal .close { color: #FFFFFF; text-shadow: 0 0 0 #fff; opacity: 0.4; transition: 0.3s all; }
